@@ -1,0 +1,69 @@
+* {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+::selection {
+    color: black;
+    background-color: white;
+}
+
+body {
+    background-color: black;
+}
+
+form {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+input,
+button {
+    height: calc(100%/5);
+    width: 100%;
+}
+
+input {
+    text-transform: none;
+    outline: transparent;
+}
+
+button {
+    transition-duration: 0.3s;
+}
+
+/* .login::after,
+.login::before,
+.create-new-company::after,
+.create-new-company::before {
+    border-color: white;
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    margin: auto;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.login:hover::after,
+.create-new-company:hover::after {
+    transform: translate(-10px, -10px);
+}
+
+.login:hover::before,
+.create-new-company:hover::before {
+    transform: translate(10px, 10px);
+} */
+
+button:hover {
+    border-color: white;
+    transform: translate(-10px, -10px);
+}

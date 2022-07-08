@@ -1,0 +1,104 @@
+* {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+::selection {
+    color: black;
+    background-color: white;
+}
+
+button {
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    border-color: white;
+    transform: translate(-5px, -5px);
+}
+
+body {
+    background-color: black;
+}
+
+.button-menu {
+    height: 50px;
+    width: 50px;
+}
+
+.button-menu:hover {
+    border-color: transparent;
+}
+
+.button-menu div {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: calc((100% - (10% * 6)) /3);
+    background-color: white;
+}
+
+.work-space {
+    display: flex;
+}
+
+nav {
+    border-right-color: white;
+    border-width: 3px;
+    border-style: solid;
+    resize: horizontal;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+nav button {
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    display: block;
+    transition-duration: 0.3s;
+}
+
+nav button:hover {
+    border-color: white;
+    transform: translate(-5px, -5px);
+}
+
+/* .div-invoice-entry {
+    border-left-color: white;
+    resize: horizontal;
+} */
+
+.div-invoice-entry header *> {
+    width: calc(100%/8);
+    overflow: hidden;
+}
+
+.div-invoice-entry header input {
+    outline: auto;
+}
+
+
+.div-journal-entry,
+.div-journal-draft,
+.div-journal,
+.div-accounts,
+.div-add-account,
+.div-change-password,
+.div-login,
+.div-add-new-employee,
+.div-change-employee-name,
+.div-delete-employee,
+.div-change-company-name,
+.div-delete-company {
+    display: none;
+}
